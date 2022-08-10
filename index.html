@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảo tồn động vật hoãng dã</title>
+    <link rel="stylesheet" href="styles/all.min.css">
+    <link rel="stylesheet" href="styles/color.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- <link rel="stylesheet" href="styles/style1.css"> -->
+
+    <link rel="stylesheet" href="styles/media.css">
+    <link rel="icon" href="img/ava.jpg">
+</head>
+<body>
+
+    <main class="main day">
+        
+        <div class="loader">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" style="display: none;">
+                <symbol id="wave">
+                <path d="M420,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C514,6.5,518,4.7,528.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H420z"></path>
+                <path d="M420,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C326,6.5,322,4.7,311.5,2.7C304.3,1.4,293.6-0.1,280,0c0,0,0,0,0,0v20H420z"></path>
+                <path d="M140,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C234,6.5,238,4.7,248.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H140z"></path>
+                <path d="M140,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C46,6.5,42,4.7,31.5,2.7C24.3,1.4,13.6-0.1,0,0c0,0,0,0,0,0l0,20H140z"></path>
+                </symbol>
+            </svg>
+            <div class="box">
+                <div class="percent">
+                <div class="percentNum" id="count">0</div>
+                <div class="percentB">%</div>
+                </div>
+                <div id="water" class="water">
+                <svg viewBox="0 0 560 20" class="water_wave water_wave_back">
+                    <use xlink:href="#wave"></use>
+                </svg>
+                <svg viewBox="0 0 560 20" class="water_wave water_wave_front">
+                    <use xlink:href="#wave"></use>
+                </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="delete_alert">
+            <p class="delete_alert_text">Do you really want to delete this comment</p>
+            <a href="#" class="btn delete_alert_btn">Yes</a>
+        </div>
+
+        <header class="header" id="home">
+            <nav class="nav">
+                <div class="container_glass">
+                    <div class="nav_blog">
+                        <a href="/" class="nav_logo"><p class="logo_text">Nhóm 7</p></a>
+                        <ul class="nav_list">
+                            <li><a href="#home" class="nav_link">Trang chủ</a></li>
+                            <li><a href="#about" class="nav_link">Hiện trạng</a></li>
+                            <li><a href="#skills" class="nav_link">Tình trạng</a></li>
+                            <li><a href="#projects" class="nav_link">Động vật nguy cấp</a></li>
+                            <li><a href="#service" class="nav_link">Giải pháp</a></li>
+                            <li><a href="#contact" class="nav_link">Liên hệ</a></li>
+                            <li><a href="#comments" class="nav_link">Facts</a></li>
+                        </ul>
+                        <div class="nav_functions">
+                            <!-- <a href="#" class="btn nav_button">Sign up</a> -->
+                            <div class="profile_nav">
+                                <div class="profile_image">
+                                    <h5 class="profile_name">Nhóm 7</h5>
+                                    <img src="img/ava.jpg" alt="" class="profile_img">
+                                </div>
+                                <div class="profile_content">
+                                    <span><a href="pages/profile.html" class="profile_text">Profile info</a></span>
+                                    <span><p class="log_out">Log out</p></span>
+                                </div>
+                            </div>
+                            <div class="day_night">
+                                <div class="day_night_indicator"><i class="far fa-sun"></i></div>
+                                <div class="day_night_content">
+                                    <span class="day_icon"><i class="far fa-sun"></i>Day</span>
+                                    <span class="night_icon"><i class="far fa-moon"></i>Night</span>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu_btn_blog">
+                            <div class="menu_btn"></div>
+                            <div class="menu_btn_span"></div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="header_blog">
+                <div class="container_glass">
+                    <div class="header_content">
+                        <h2 class="header_text">Nhóm 7</h2>
+                        <h1 class="header_title">Bảo vệ động vật hoang dã</h1>
+                        <div class="header_info">
+                            <div class="header_info_content"><span>Nâng cao nhận thức</span><span>Tuyên truyền và bảo vệ</span></div>
+                        </div>
+                        <a href="#about" class="btn header_btn">Hiện trạng</a>
+                        <div class="social_media">
+                            <a href="https://group7cnmt@gmail.com" class="messangers">
+                                <i class="fas fa-envelope"></i>
+                                <span class="tooltiptext">Nhóm 7</span>
+                            </a>
+                            <!-- <a href="https://twitter.com/MrUzcoin" class="messangers">
+                                <i class="fab fa-twitter"></i>
+                                <span class="tooltiptext">MrUzcoin</span>
+                            </a>
+                            <a href="https://www.facebook.com/suyunbek.saydazimov.18/" class="messangers">
+                                <i class="fab fa-facebook"></i>
+                                <span class="tooltiptext">Suyunbek</span>
+                            </a> -->
+                        </div>
+                    </div>
+                    <img src="img/zoo.png" alt="" class="header_img">
+                </div>
+            </div>
+        </header>
+
+        <div class="main_content">
+
+            <section class="about" id="about">
+                <div class="container">
+                    <h2 class="title about_title">Hiện trạng <span>chung</span></h2>
+                    <div class="about_content">
+                        <div class="about_box about_image" data-aos="fade-right" data-aos-duration="1000">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Gymnogyps_californianus_-Bitter_Creek_National_Wildlife_Refuge%2C_California%2C_USA_-flying-8.jpg/1200px-Gymnogyps_californianus_-Bitter_Creek_National_Wildlife_Refuge%2C_California%2C_USA_-flying-8.jpg" alt="" class="about_img">
+                        </div>             
+                        <div class="about_box about_cv" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
+                            <h3 class="content_titles about_title">Nguyên <span>nhân</span></h3>
+                            <p class="about_text"> Nguyên nhân của những đợt TCHL là vấn đề còn nhiều tranh cãi. 
+                                Nhưng rõ ràng từ hàng nghìn năm trước, con người đã gây những biến đổi sinh cảnh quan trọng, làm ảnh hưởng rất lớn đến các loài động, thực vật.
+                                Thời tiền sử, chủ yếu là các thảm họa từ thiên nhiên gây ra sự tuyệt chủng. Nhưng ngày nay, các nhà nghiên cứu cho rằng hơn 99% những sự tuyệt chủng là do loài người.
+                                <br><br>
+                                Việc con người khai thác bừa bãi các nguồn tài nguyên thiên nhiên như săn bắn vô tội vạ, phá rừng bừa bãi, sử dụng quá mức đất đai canh tác, 
+                                làm ô nhiễm mặt nước, làm khô cạn ao hồ rồi các cuộc chiến tranh tàn khốc... đang hủy hoại môi trường. 
+                                
+                                <span class="read_more"> <br>
+                                    Các hoạt động du lịch thiếu bền vững, xây dựng, thăm dò và khai thác thiếu quy hoạch, 
+                                các hoạt động công nghiệp đã tạo ra các nguồn khí thải độc hại làm cho khí hậu nóng lên, tạo ra những lỗ hổng ở tầng ôzôn... 
+                                đe dọa trực tiếp đến sự sống trên trái đất.
+                                <br><br>
+                                Từ ít nhất 50.000 năm trước, những vụ cháy có chủ ý đã xảy ra ở các thảo nguyên châu Phi. Cách đây 5.000 năm ở châu Âu và khoảng 4.000 năm ở Bắc Mỹ, 
+                                việc phá rừng và biến đổi các vùng đất tự nhiên thành bãi chăn gia súc đã xuất hiện phổ biến, 
+                                tạo điều kiện cho các loài cỏ dại và động vật ăn cỏ mở rộng phạm vi cư trú, gây ra sự tuyệt chủng của hàng loạt các loài bản địa.
+                                <br><br>
+                                Việc buôn bán, tiêu thụ trái phép động vật hoang dã cũng là một trong những nguyên nhân lớn nhất gây suy giảm đa dạng sinh học, đặc biệt là suy giảm các loài động vật hoang dã trên thế giới cũng như ở Việt Nam. Bất cứ một loài nào đều là một mắt xích quan trọng trong hệ sinh thái và sự biến mất một loài cũng có thể ảnh hưởng đến sự cân bằng trong tự nhiên.
+                                    </span><span class="read_more_btn"> Read more ...</span></p>
+                        </div>
+                        <div class="about_box" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+                            <h3 class="content_titles about_title">Số liệu <span>thực tế</span></h3>
+                            <p class="about_text">Tổ chức Bảo tồn thiên nhiên thế giới (IUCN) ngày 2-5-2006 đã cảnh báo: Hơn 16.000 loài động, 
+                                thực vật đang đứng trước nguy cơ tuyệt chủng trên toàn cầu và với tốc độ phá hủy nơi cư trú như hiện nay thì 
+                                trong vòng 10 năm tới mỗi năm sẽ có khoảng 25.000 loài động, thực vật bị tuyệt chủng. Sự biến mất của các loài động, 
+                                thực vật sẽ dẫn tới sự sụp đổ dây chuyền của các loài khác sống phụ thuộc vào chúng trong đó có loài người.<br><br>
+                                Hiện tại các loài đang bị tuyệt chủng với tốc độ vượt xa nhiều lần tốc độ hình thành loài, nhanh nhất kể từ trước đến nay và 
+                                không theo bất kỳ một quy luật nào.Cứ 20 phút lại có một loài động vật hay thực vật nào đó bị tuyệt chủng và 50 năm trở lại đây, 
+                                tốc độ tuyệt chủng đã tăng nhanh gấp 40 lần so với thời kỳ cách mạng công nghiệp.                                
+                                <span class="read_more"> <br>
+                                    Sách đỏ 2006 cũng ghi rằng 25% các loài bò sát và động vật có vú, 20% các loài lưỡng cư, 
+                                    12% các loài chim, 10% các loài thực vật hiện có trên trái đất sẽ phải đối mặt với sự tuyệt chủng trong vòng 30 năm tới.
+                                    Tình trạng giết hại động vật hoang dã trên thế giới không ngừng gia tăng dẫn đến một cuộc đại tuyệt chủng và tài nguyên của Trái Đất bị “vắt kiệt” để đáp ứng nhu cầu ăn uống của con người.
+                                     </span><span class="read_more_btn"> Read more ...</span></p>
+                            <div class="about_buttons">
+                                <!-- <a href="https://baotintuc.vn/long-form/emagazine/dong-vat-hoang-da-ben-bo-vuc-tuyet-chung-20211210222110940.htm" class="btn about_btn" >Thông tin chi tiết</a>
+                                <a href="https://www.iucnredlist.org/" class="btn about_btn">Danh sách Đỏ</a> -->
+                                <a href="slider/slide.html" class="btn about_btn">Thực trạng hiện nay</a>
+                            </div>
+                        </div>
+                        <!-- <div class="iframe_wrap">
+                            <iframe src="files/mycv.pdf" width="100%" height="100%" frameborder="0" class="fixedPdf"></iframe>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+            
+            <!-- <section class="projects" id="projects">
+                <div class="container">
+                    <h2 class="title projects_title">My <span>Projects</span></h2>
+                    <div class="projects_content" data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="100">
+                        <div class="glide">
+                            <div class="glide__track" data-glide-el="track">
+                                <ul class="glide__slides">
+                                    <li class="glide__slide a16">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Báo đốm</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Panthera pardus directionalis</p>
+                                            <p class="glide_text">Trong khi hầu hết báo hoa mai sống ở châu Phi, thì phân loài quý hiếm này đã tìm cách sống sót ở vùng Viễn Đông Nga.<br>
+                                                Chúng đang bị đe dọa do săn trộm bất hợp pháp, chỉ còn 84 cá thể được cho là sống trong tự nhiên ngày nay.</p>
+                                            <a href="https://vi.wikipedia.org/wiki/B%C3%A1o_hoa_mai" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a17">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Tê giác đen</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Diceros bicornis</p>
+                                            <p class="glide_text">Tê giác đen có thể được tìm thấy ở Namibia và ven biển Đông Phi.<br>
+                                                Trong thế kỷ 20, chúng bị săn trộm để cưa lấy sừng khiến số lượng tê giác đen giảm đáng kể, từ năm 1960 đến 1995, số tê giác đã giảm đi 98%.<br>
+                                                Hiện còn 5.000 cá thể tê giác đen đang tồn tại, nhưng nạn săn trộm vẫn là mối đe dọa lớn đối với sự sống còn của chúng.</p>
+                                            <a href="https://vi.wikipedia.org/wiki/T%C3%AA_gi%C3%A1c_%C4%91en" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a18">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Đười ươi</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Pongo pygmaeus</p>
+                                            <p class="glide_text">Trong 60 năm qua, dân số đười ươi đã giảm 50%.<br> 
+                                                Loài này được chia thành ba phân loài dựa trên nơi chúng sống trên đảo Borneo: phía Tây Bắc, Đông Bắc và ở trung tâm.<br>
+                                                Đười ươi Tây Bắc Borneo bị đe dọa nhiều nhất do nạn phá rừng và săn bắn. Hiện tại chỉ còn 1.500 cá thể.</p>
+                                            <a href="https://vi.wikipedia.org/wiki/%C4%90%C6%B0%E1%BB%9Di_%C6%B0%C6%A1i_Borneo" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>+
+                                    </li>
+                                    <li class="glide__slide a19">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Khỉ đột sông Cross</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Gorilla gorilla diehli</p>
+                                            <p class="glide_text">Đây là loài khỉ đột sống giới hạn ở những ngọn đồi và núi rừng của khu vực biên giới Cameroon-Nigeria tại đầu nguồn của sông Cross (Nigeria).<br>
+                                                Do phá rừng, khỉ đột sông Cross hiện đang sống gần gũi với con người và vì thế có nguy cơ bị săn trộm bất hợp pháp.</p>
+                                            <a href="https://en.wikipedia.org/wiki/Cross_River_gorilla" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a20">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Khỉ đột miền Đông</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Gorilla beringei graueri</p>
+                                            <p class="glide_text">Đây là loài lớn nhất trong bốn phân loài khỉ đột, sống ở vùng đất thấp phía đông Cộng hòa Dân chủ Congo (DRC), chủ yếu ăn hoa quả.<br>
+                                                Tình trạng bất ổn dân sự ở Cộng hòa Dân chủ Congo (DRC), nơi loài này sinh sống, đã dẫn đến sự thu hẹp môi trường sống của chúng.</p>
+                                            <a href="https://vi.wikipedia.org/wiki/Kh%E1%BB%89_%C4%91%E1%BB%99t_%C4%91%E1%BA%A5t_th%E1%BA%A5p_ph%C3%ADa_%C4%90%C3%B4ng" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a21">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Rùa biển Hawksbill</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Eretmochelys imbricata</p>
+                                            <p class="glide_text">Chủ yếu được tìm thấy ở vùng biển nhiệt đới và gần các rạn san hô, 
+                                                rùa biển đã sống ở vùng biển của chúng ta trong 100 triệu năm qua và chúng là một phần quan trọng của hệ sinh thái biển. 
+                                                Chúng giúp duy trì sự sống của các rạn san hô bằng cách loại bỏ bọt biển.</p>
+                                            <a href="https://vi.wikipedia.org/wiki/%C4%90%E1%BB%93i_m%E1%BB%93i" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a22">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Tê giác Java</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Rhinoceros sondaicus</p>
+                                            <p class="glide_text">Với số lượng còn khoảng 68, tê giác Java là loài có nguy cơ tuyệt chủng cao nhất trong số năm loài tê giác.<br>
+                                                Chúng từng sống ở khắp vùng đông bắc Ấn Độ và Đông Nam Á, nhưng giờ chỉ có thể được tìm thấy ở Công viên quốc gia Ujung Kulon, ở Indonesia.</p>
+                                            <a href="https://vi.wikipedia.org/wiki/T%C3%AA_gi%C3%A1c_Java" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a23">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Đười ươi</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Pongo tapanuliensis</p>
+                                            <p class="glide_text">Là sinh vật có trí thông minh cao, đười ươi chia sẻ 96,4% gen của loài người. Chúng được biết đến với bộ lông màu đỏ đặc biệt và được coi là động vật sống trên cây lớn nhất.<br>
+                                                Đười ươi có ba loài: Bornean, Sumatra và Tapanuli và chúng sống đơn độc trong các khu rừng đất thấp.</p>
+                                            <a href="https://vi.wikipedia.org/wiki/Pongo_tapanuliensis" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a24">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Voi Sumatra</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Elephas maximus sumatranus</p>
+                                            <p class="glide_text">Được tìm thấy ở Borneo và Sumatra, voi Sumatra có chung môi trường sống với tê giác, hổ và đười ươi Sumatra.<br>
+                                                Tuy nhiên, nạn phá rừng là một vấn đề lớn ở Sumatra, hơn hai phần ba diện tích rừng thấp ở đây bị chặt phá trong 25 năm qua.</p>
+                                            <a href="https://vi.wikipedia.org/wiki/Voi_Sumatra" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a25">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Đười ươi Sumatra</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Pongo abelii</p>
+                                            <p class="glide_text">Loài đười ươi Sumatra sống gần như độc nhất trong những cây rừng nhiệt đới ở Sumatra. Loài này hiện bị co cụm ở phía bắc của đảo do phát triển nông nghiệp, các đồn điền dầu cọ và hỏa hoạn.<br>
+                                                Một con đường lớn được xây dựng ở phía bắc Sumatra có thể đang đe dọa một trong những khu vực sinh sống cuối cùng còn lại của loài này.</p>
+                                            <a href="https://vi.wikipedia.org/wiki/%C4%90%C6%B0%E1%BB%9Di_%C6%B0%C6%A1i_Sumatra" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a26">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Tê giác Sumatra</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Dicerorhinus sumatlingsis</p>
+                                            <p class="glide_text">Tê giác Sumatra là loài tê giác nhỏ nhất trong số các loài tê giác còn sống và là loài tê giác duy nhất ở châu Á có hai sừng.<br>
+                                                Vì nạn săn trộm do nhu cầu sừng tê giác tăng lên, môi trường sống bị mất, số cá thể tê giác Sumatra đã giảm xuống chỉ còn 80 con.</p>
+                                            <a href="https://vi.wikipedia.org/wiki/T%C3%AA_gi%C3%A1c_Sumatra" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a27">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Hổ Sunda</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Panthera tigris sondaica</p>
+                                            <p class="glide_text">Những con hổ Sunda được phân biệt bởi các sọc đen dày trên bộ lông màu cam của chúng.<br>
+                                                Hiện chỉ còn 400 cá thể, tất cả đều sống trên đảo Sumatra. Các nhà bảo tồn lo lắng rằng nạn phá rừng và săn trộm (chiếm 80% số ca tử vong của hổ) có thể dẫn đến sự tuyệt chủng của chúng.</p>
+                                            <a href="https://vi.wikipedia.org/wiki/H%E1%BB%95_Java" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a28">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Cá heo Vaquita</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Phocoena sinus</p>
+                                            <p class="glide_text">Vaquita là một loài cá heo đặc hữu của Vịnh California. Với số lượng chỉ còn 10 cá thể, Vaquita là động vật có vú dưới biển hiếm nhất thế giới.<br>
+                                                Chỉ được phát hiện vào năm 1958, chúng hiện đang trên bờ vực tuyệt chủng do đánh bắt cá bất hợp pháp - cứ năm con cá heo Vaquita thì có một con chết trong lưới đánh cá.</p>
+                                            <a href="https://vi.wikipedia.org/wiki/C%C3%A1_heo_California" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a29">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Khỉ đột miền tây</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Gorilla gorilla gorilla</p>
+                                            <p class="glide_text">Số lượng chính xác của khỉ đột vùng đất thấp phía Tây chưa được biết do môi trường sống xa xôi của chúng trong rừng nhiệt đới châu Phi.<br>
+                                                Chúng được tìm thấy ở Cameroon, Cộng hòa Trung Phi, Cộng hòa Dân chủ Congo, Equatorial Guinea, Gabon và Cộng hòa Congo.</p>
+                                            <a href="https://vi.wikipedia.org/wiki/Kh%E1%BB%89_%C4%91%E1%BB%99t_%C4%91%E1%BA%A5t_th%E1%BA%A5p_ph%C3%ADa_T%C3%A2y" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a30">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Cá heo không vây nước ngọt</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Neophocaena asiaeorientalis ssp. Asiaeorientalis</p>
+                                            <p class="glide_text">Với số lượng ít hơn 2.000 cá thể, loài cá heo không vây sống ở nước ngọt này được biết đến với trí thông minh có thể so sánh với một con khỉ đột và "nụ cười" tinh nghịch của nó.<br>
+                                                Chúng được tìm thấy ở sông Dương Tử, Trung Quốc, nhưng đánh bắt quá mức và ô nhiễm có thể dẫn đến sự tuyệt chủng của chúng.</p>
+                                            <a href="https://en.wikipedia.org/wiki/Yangtze_finless_porpoise" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="glide__arrows" data-glide-el="controls">
+                                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-chevron-left"></i></button>
+                                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                            <div class="glide__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet" data-glide-dir="=0"></button>
+                                <button class="glide__bullet" data-glide-dir="=1"></button>
+                                <button class="glide__bullet" data-glide-dir="=2"></button>
+                                <button class="glide__bullet" data-glide-dir="=3"></button>
+                                <button class="glide__bullet" data-glide-dir="=4"></button>
+                                <button class="glide__bullet" data-glide-dir="=5"></button>
+                                <button class="glide__bullet" data-glide-dir="=6"></button>
+                                <button class="glide__bullet" data-glide-dir="=7"></button>
+                                <button class="glide__bullet" data-glide-dir="=8"></button>
+                                <button class="glide__bullet" data-glide-dir="=9"></button>
+                                <button class="glide__bullet" data-glide-dir="=10"></button>
+                                <button class="glide__bullet" data-glide-dir="=11"></button>
+                                <button class="glide__bullet" data-glide-dir="=12"></button>
+                                <button class="glide__bullet" data-glide-dir="=13"></button>
+                                <button class="glide__bullet" data-glide-dir="=14"></button>
+                              </div>
+                          </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <section class="skills" id="skills">
+                <div class="container_glass">
+                    <h2 class="title skills_title">Tình trạng <span>bảo tồn</span></h2>
+                    <div class="skills_content">
+                        <div class="skills_cards">
+                            <div class="skills_card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200">
+                                <div class="skills_img_blog">
+                                    <i class="fas fa-pencil-ruler"></i>
+                                    <!-- <p class="skills_card_text"> -->
+                                        <ul class="skills_card_text">
+                                            <li> &#8226; Tuyệt chủng (EX)</li>
+                                            <br/>
+                                            <li> &#8226; Tuyệt chủng trong tự nhiên (EW)</li>
+                                        </ul>
+                                    <!-- </p> -->
+                                </div>
+                                <h4 class="skills_card_title">Tuyệt chủng</h4>
+                            </div>
+                            <div class="skills_card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                                <div class="skills_img_blog">
+                                    <i class="fas fa-laptop-code"></i>
+                                    <ul class="skills_card_text">
+                                        <li> &#8226; Cực kỳ nguy cấp (CR)</li>
+                                        <br/>
+                                        <li> &#8226; Nguy cấp (EN)</li>
+                                        <br>
+                                        <li> &#8226; Sắp nguy cấp (VU)</li>
+                                    </ul>
+                                </div>
+                                <h4 class="skills_card_title">Bị đe dọa</h4>
+                            </div>
+                            <div class="skills_card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+                                <div class="skills_img_blog">
+                                    <i class="fas fa-server"></i>
+                                    <ul class="skills_card_text">
+                                        <li> &#8226; Sắp bị đe dọa (NT)</li>
+                                        <br/>
+                                        <li> &#8226; Phụ thuộc bảo tồn (CD)</li>
+                                        <br>
+                                        <li> &#8226; Ít quan tâm (LC)</li>
+                                    </ul>
+                                </div>
+                                <h4 class="skills_card_title">Nguy cơ thấp</h4>
+                            </div>
+                        </div>
+                        <div class="skills_box">
+                            <div class="skills_app" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                                <h2 class="title skills_app_title">Cấp độ nguy hại</h2>
+                                <img src="img/2.png" alt="" class="skills_img1 skills_app_img">
+                                <img src="img/3.png" alt="" class="skills_img2 skills_app_img">
+                                <img src="img/4.png" alt="" class="skills_img3 skills_app_img">
+                                <img src="img/5.png" alt="" class="skills_img4 skills_app_img">
+                                <img src="img/6.png" alt="" class="skills_img5 skills_app_img">
+                                <img src="img/7.png" alt="" class="skills_img6 skills_app_img">
+                            </div>
+                            <div class="skills_about" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                                <h2 class="content_titles skills_about_title">IU<span>CN</span></h2>
+                                <p class="skills_about_text">Liên minh Quốc tế Bảo tồn Thiên nhiên và Tài nguyên Thiên nhiên, viết tắt là IUCN 
+                                    là một tổ chức bảo vệ thiên nhiên, được biết đến qua việc công bố cuốn Sách đỏ hàng năm, 
+                                    nhằm cảnh báo thế giới về tình trạng suy thoái môi trường thiên nhiên trên toàn cầu, và những tác động của con người lên sự sống của Trái Đất.
+                                    Từ năm 1963, Liên minh IUCN thường xuyên phát hành Sách đỏ là danh sách về tình trạng bảo tồn và đa dạng của các loài động vật và thực vật trên thế giới, chia thành các cấp như trên.
+                                    Theo Sách đỏ IUCN 2007 (danh sách cập nhật ngày 12 tháng 9), tổng cộng 16.306 loài sinh vật (thực và động vật), được coi là đang nguy cấp, 
+                                    trong đó có 785 loài được coi là đã hoàn toàn tuyệt chủng và 65 loài chỉ còn tồn tại trong môi trường nuôi nhốt (tuyệt chủng trong thiên nhiên), 
+                                    trong tổng số 41.415 loài (của khoảng 1,9 triệu chủng loại trên thế giới) đã được xếp hạng.
+                                    </p>
+                                <a href="https://vi.wikipedia.org/wiki/T%C3%ACnh_tr%E1%BA%A1ng_b%E1%BA%A3o_t%E1%BB%93n" class="btn skills_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section class="projects" id="projects">
+                <div class="container">
+                    <h2 class="title projects_title">My <span>Projects</span></h2>
+                    <div class="projects_content" data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="100">
+                        <div class="glide">
+                            <div class="glide__track" data-glide-el="track">
+                                <ul class="glide__slides">
+                                    <li class="glide__slide a1">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">90 con voi bị giết</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="glide_text">Các nhà bảo vệ động vật hoang dã vừa tìm thấy xác của 90 con voi 
+                                                rừng bị giết hại để lấy ngà chỉ trong vòng vài tuần qua tại một công viên quốc gia Botswana.</p>
+                                            <a href="https://www.vietnamplus.vn/90-con-voi-bi-giet-chi-trong-vai-tuan-o-cong-vien-quoc-gia-botswana/522727.vnp" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a2">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Thu giữ hơn 50.000 động vật hoang dã</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="glide_text">Cảnh sát Trung Quốc đã tiến hành một chiến dịch chống buôn bán động vật hoang dã bất hợp pháp, 
+                                                trong đó thu giữ hơn 53.486 động vật hoang dã tại tỉnh An Huy.</p>
+                                            <a href="https://www.vietnamplus.vn/canh-sat-trung-quoc-thu-giu-hon-50000-dong-vat-hoang-da/519506.vnp" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a3">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Gần 34 kg sừng tê giác bị thu giữ</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="glide_text">Lực lượng chức năng đã tiến hành kiểm tra một kiện hàng 53kg, 
+                                                phát hiện gần 34kg sừng tê giác vận chuyển từ Nam Phi, quá cảnh qua Doha, về Việt Nam.</p>
+                                            <a href="https://www.vietnamplus.vn/gan-34-kg-sung-te-giac-tu-nam-phi-qua-canh-doha-ve-viet-nam-bi-thu-giu/529550.vnp" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>+
+                                    </li>
+                                    <li class="glide__slide a4">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Bắt giữ gần 1 tấn ngà voi, vẩy tê tê</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="glide_text">Chi cục Hải quan cửa khẩu Sân bay quốc tế Nội Bài vừa phối hợp với lực lượng chức năng phát hiện, thu giữ gần 1 tấn gồm ngà voi, sản phẩm từ ngà voi và vẩy tê tê vận chuyển qua đường hàng không.</p>
+                                            <a href="https://www.vietnamplus.vn/bat-giu-gan-1-tan-nga-voi-vay-te-te-chuyen-ve-san-bay-noi-bai/527201.vnp" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a5">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Hơn 730 cá thể tê giác bị giết hại</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="glide_text">Do nạn săn bắn bất hợp pháp tiếp diễn, đến thời điểm hiện tại, hơn 730 cá thể tê giác bị giết hại tại Nam Phi, 
+                                                bất chấp các nỗ lực chấm dứt vấn nạn trên. Các nhà quản lý động vật hoang dã lo ngại loài thú móng guốc này sẽ bị tuyệt chủng vào cuối thập kỷ này.</p>
+                                            <a href="https://www.doisongphapluat.com/hon-730-ca-the-te-giac-bi-giet-hai-tai-nam-phi-a50386.html" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a6">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Nạn buôn lậu các loài tê tê</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="glide_text">Mới đây, Công an Nghệ An và Đội phản ứng nhanh của Trung tâm Bảo tồn Động vật hoang dã 
+                                                (Save Vietnam's Wildlife - SVW) đã thu giữ 4 cá thể tê tê còn sống từ đối tượng buôn bán động vật hoang dã trái phép.</p>
+                                            <a href="https://thanhnien.vn/nan-buon-lau-cac-loai-te-te-va-nhung-no-luc-bao-ton-post1105064.html" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a7">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Thảm cảnh rùa hoang dã ở Việt Nam</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="glide_text">Trước nạn săn bắt, tàn sát, bán buôn, giết thịt, nấu cao rùa, phóng viên Lao Động đã tiến hành điều tra ở hai miền Bắc, Nam. 
+                                                Nếu không có một sự vào cuộc quyết liệt, những con rùa quý hiếm, một thời gian ngắn nữa thôi, sẽ rơi vào tuyệt diệt.</p>
+                                            <a href="https://laodong.vn/xa-hoi/tham-canh-rua-hoang-da-o-viet-nam-vao-noi-nau-cao-len-ban-nhau-775258.ldo" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a8">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Loài hổ có thể đã biến mất khỏi Lào</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="glide_text">Bất chấp các cuộc tìm kiếm rộng khắp, sử dụng cả camera đặt trong các cánh rừng, 
+                                                không một hình ảnh hay lời kể nào về sự xuất hiện của hổ được ghi nhận ở Lào trong 10 năm qua.</p>
+                                            <a href="https://tuoitre.vn/wwf-loai-ho-co-the-da-bien-mat-khoi-lao-20220209152535882.htm" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a9">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Săn cá mập lấy vi cá</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="glide_text">Từ năm 2014 đã có hơn 100 quốc gia cấm cắt vi cá mập. 
+                                                Trên thế giới mỗi năm có 73 triệu con cá mập bị giết để lấy vi cá nấu súp. 
+                                                Hầu hết các nước và tổ chức bảo vệ biển đã gọi đây là “tội ác thầm lặng”.</p>
+                                            <a href="https://tuoitre.vn/san-ca-map-lay-vi-ca-toi-ac-tham-lang-20180301112509144.htm" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a10">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Săn bắt chim yến trái phép</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="glide_text">Mặc dù đã có nhiều văn bản chỉ đạo từ trung ương đến địa phương nhằm 
+                                                ngăn chặn tình trạng săn bắt chim yến và các loài chim hoang dã, nhưng vấn nạn này vẫn đang tiếp diễn</p>
+                                            <a href="https://nguoichannuoi.vn/san-bat-chim-yen-trai-phep:-uy-hiep-dan-yen-va-nghe-nuoi-chim-yen-nd8910.html" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a11">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Các loài mèo lớn đang bị săn bắt</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="glide_text">Báo cáo của Liên hợp quốc cho thấy, các bộ phận cơ thể sư tử, 
+                                                các loài báo đang ngày càng được tội phạm buôn lậu săn tìm nhiều hơn để thay thế cho các sản phẩm hổ, 
+                                                nhưng nhu cầu về ngà voi và sừng tê giác đã có dấu hiệu giảm liên tục.</p>
+                                            <a href="https://nhandan.vn/cac-loai-meo-lon-dang-bi-san-bat-de-thay-the-nhu-cau-ve-ho-post608568.html" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a12">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Báo đốm Nam Mỹ bị tàn sát</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="glide_text">Từ Mexico tới Argentina, báo đốm Nam Mỹ đang ngày càng bị săn bắt nhiều hơn để phục vụ nhu cầu của thị trường Trung Quốc.</p>
+                                            <a href="https://zingnews.vn/bao-dom-nam-my-bi-tan-sat-vi-con-khat-rang-nanh-va-mong-vuot-cua-tq-post1096751.html" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a13">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Tình trạng giết hại trái phép loài báo tuyết quý hiếm</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="glide_text">TRAFFIC, một mạng lưới giám sát buôn bán động vật hoang dã trên toàn cầu, 
+                                                ngày 21-10 công bố báo cáo cho thấy mỗi năm có hàng trăm con báo tuyết bị giết hại bất hợp pháp</p>
+                                            <a href="https://tuoitre.vn/canh-bao-tinh-trang-giet-hai-trai-phep-loai-bao-tuyet-quy-hiem-1193872.htm" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a14">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Quá trình giết cá voi gây sốc ở Nhật Bản</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="glide_text">Đoạn video 20 phút ghi lại cảnh ngư dân Nhật giết một con cá voi minke 
+                                                bằng cách dìm nó dưới nước cho đến khi chết ngạt, khiến các nhà hoạt động bức xúc.</p>
+                                            <a href="https://zingnews.vn/qua-trinh-giet-ca-voi-gay-soc-o-nhat-ban-post1179544.html" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a15">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Nạn săn bắt thú rừng hoang dã diễn ra phổ biến</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="glide_text">VTV đã phản ánh về tình trạng săn bắt, giết thịt và buôn bán công khai các loài động vật hoang dã.</p>
+                                            <a href="https://vtv.vn/trong-nuoc/nan-san-bat-thu-rung-hoang-da-dien-ra-pho-bien-20191119000641685.htm" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="glide__arrows" data-glide-el="controls">
+                                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-chevron-left"></i></button>
+                                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                            <div class="glide__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet" data-glide-dir="=0"></button>
+                                <button class="glide__bullet" data-glide-dir="=1"></button>
+                                <button class="glide__bullet" data-glide-dir="=2"></button>
+                                <button class="glide__bullet" data-glide-dir="=3"></button>
+                                <button class="glide__bullet" data-glide-dir="=4"></button>
+                                <button class="glide__bullet" data-glide-dir="=5"></button>
+                                <button class="glide__bullet" data-glide-dir="=6"></button>
+                                <button class="glide__bullet" data-glide-dir="=7"></button>
+                                <button class="glide__bullet" data-glide-dir="=8"></button>
+                                <button class="glide__bullet" data-glide-dir="=9"></button>
+                                <button class="glide__bullet" data-glide-dir="=10"></button>
+                                <button class="glide__bullet" data-glide-dir="=11"></button>
+                                <button class="glide__bullet" data-glide-dir="=12"></button>
+                                <button class="glide__bullet" data-glide-dir="=13"></button>
+                                <button class="glide__bullet" data-glide-dir="=14"></button>
+                              </div>
+                          </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <!-- <section class="projects" id="projects">
+                <div id="mySlider"></div>
+                <div id="sliderNav">
+                    <div id="sliderPrev" onclick="prevSlide();"><img src="https://nguyenvanhieu.vn/wp-content/uploads/2020/09/left-arrow.png"></div>
+                    <div id="sliderNext" onclick="nextSlide();"><img src="https://nguyenvanhieu.vn/wp-content/uploads/2020/09/right-arrow.png"></div>
+                </div>
+            </section> -->
+            <!-- info pulled from http://10mosttoday.com/10-most-beautiful-forests-in-the-world/ -->
+
+            <section class="projects" id="projects">
+                <div class="container">
+                    <h2 class="title projects_title">15 động vật <span>nguy cấp nhất </span>hành tinh</h2>
+                    <div class="projects_content" data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="100">
+                        <div class="glide">
+                            <div class="glide__track" data-glide-el="track">
+                                <ul class="glide__slides">
+                                    <li class="glide__slide a16">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Báo đốm</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Panthera pardus directionalis</p>
+                                            <p class="glide_text">Trong khi hầu hết báo hoa mai sống ở châu Phi, thì phân loài quý hiếm này đã tìm cách sống sót ở vùng Viễn Đông Nga.<br>
+                                                Chúng đang bị đe dọa do săn trộm bất hợp pháp, chỉ còn 84 cá thể được cho là sống trong tự nhiên ngày nay.</p>
+                                            <a href="https://vi.wikipedia.org/wiki/B%C3%A1o_hoa_mai" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a17">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Tê giác đen</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Diceros bicornis</p>
+                                            <p class="glide_text">Tê giác đen có thể được tìm thấy ở Namibia và ven biển Đông Phi.<br>
+                                                Trong thế kỷ 20, chúng bị săn trộm để cưa lấy sừng khiến số lượng tê giác đen giảm đáng kể, từ năm 1960 đến 1995, số tê giác đã giảm đi 98%.<br>
+                                                Hiện còn 5.000 cá thể tê giác đen đang tồn tại, nhưng nạn săn trộm vẫn là mối đe dọa lớn đối với sự sống còn của chúng.</p>
+                                            <a href="https://vi.wikipedia.org/wiki/T%C3%AA_gi%C3%A1c_%C4%91en" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a18">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Đười ươi</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Pongo pygmaeus</p>
+                                            <p class="glide_text">Trong 60 năm qua, dân số đười ươi đã giảm 50%.<br> 
+                                                Loài này được chia thành ba phân loài dựa trên nơi chúng sống trên đảo Borneo: phía Tây Bắc, Đông Bắc và ở trung tâm.<br>
+                                                Đười ươi Tây Bắc Borneo bị đe dọa nhiều nhất do nạn phá rừng và săn bắn. Hiện tại chỉ còn 1.500 cá thể.</p>
+                                            <a href="https://vi.wikipedia.org/wiki/%C4%90%C6%B0%E1%BB%9Di_%C6%B0%C6%A1i_Borneo" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>+
+                                    </li>
+                                    <li class="glide__slide a19">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Khỉ đột sông Cross</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Gorilla gorilla diehli</p>
+                                            <p class="glide_text">Đây là loài khỉ đột sống giới hạn ở những ngọn đồi và núi rừng của khu vực biên giới Cameroon-Nigeria tại đầu nguồn của sông Cross (Nigeria).<br>
+                                                Do phá rừng, khỉ đột sông Cross hiện đang sống gần gũi với con người và vì thế có nguy cơ bị săn trộm bất hợp pháp.</p>
+                                            <a href="https://en.wikipedia.org/wiki/Cross_River_gorilla" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a20">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Khỉ đột miền Đông</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Gorilla beringei graueri</p>
+                                            <p class="glide_text">Đây là loài lớn nhất trong bốn phân loài khỉ đột, sống ở vùng đất thấp phía đông Cộng hòa Dân chủ Congo (DRC), chủ yếu ăn hoa quả.<br>
+                                                Tình trạng bất ổn dân sự ở Cộng hòa Dân chủ Congo (DRC), nơi loài này sinh sống, đã dẫn đến sự thu hẹp môi trường sống của chúng.</p>
+                                            <a href="https://vi.wikipedia.org/wiki/Kh%E1%BB%89_%C4%91%E1%BB%99t_%C4%91%E1%BA%A5t_th%E1%BA%A5p_ph%C3%ADa_%C4%90%C3%B4ng" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a21">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Rùa biển Hawksbill</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Eretmochelys imbricata</p>
+                                            <p class="glide_text">Chủ yếu được tìm thấy ở vùng biển nhiệt đới và gần các rạn san hô, 
+                                                rùa biển đã sống ở vùng biển của chúng ta trong 100 triệu năm qua và chúng là một phần quan trọng của hệ sinh thái biển. 
+                                                Chúng giúp duy trì sự sống của các rạn san hô bằng cách loại bỏ bọt biển.</p>
+                                            <a href="https://vi.wikipedia.org/wiki/%C4%90%E1%BB%93i_m%E1%BB%93i" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a22">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Tê giác Java</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Rhinoceros sondaicus</p>
+                                            <p class="glide_text">Với số lượng còn khoảng 68, tê giác Java là loài có nguy cơ tuyệt chủng cao nhất trong số năm loài tê giác.<br>
+                                                Chúng từng sống ở khắp vùng đông bắc Ấn Độ và Đông Nam Á, nhưng giờ chỉ có thể được tìm thấy ở Công viên quốc gia Ujung Kulon, ở Indonesia.</p>
+                                            <a href="https://vi.wikipedia.org/wiki/T%C3%AA_gi%C3%A1c_Java" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a23">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Đười ươi</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Pongo tapanuliensis</p>
+                                            <p class="glide_text">Là sinh vật có trí thông minh cao, đười ươi chia sẻ 96,4% gen của loài người. Chúng được biết đến với bộ lông màu đỏ đặc biệt và được coi là động vật sống trên cây lớn nhất.<br>
+                                                Đười ươi có ba loài: Bornean, Sumatra và Tapanuli và chúng sống đơn độc trong các khu rừng đất thấp.</p>
+                                            <a href="https://vi.wikipedia.org/wiki/Pongo_tapanuliensis" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a24">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Voi Sumatra</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Elephas maximus sumatranus</p>
+                                            <p class="glide_text">Được tìm thấy ở Borneo và Sumatra, voi Sumatra có chung môi trường sống với tê giác, hổ và đười ươi Sumatra.<br>
+                                                Tuy nhiên, nạn phá rừng là một vấn đề lớn ở Sumatra, hơn hai phần ba diện tích rừng thấp ở đây bị chặt phá trong 25 năm qua.</p>
+                                            <a href="https://vi.wikipedia.org/wiki/Voi_Sumatra" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a25">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Đười ươi Sumatra</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Pongo abelii</p>
+                                            <p class="glide_text">Loài đười ươi Sumatra sống gần như độc nhất trong những cây rừng nhiệt đới ở Sumatra. Loài này hiện bị co cụm ở phía bắc của đảo do phát triển nông nghiệp, các đồn điền dầu cọ và hỏa hoạn.<br>
+                                                Một con đường lớn được xây dựng ở phía bắc Sumatra có thể đang đe dọa một trong những khu vực sinh sống cuối cùng còn lại của loài này.</p>
+                                            <a href="https://vi.wikipedia.org/wiki/%C4%90%C6%B0%E1%BB%9Di_%C6%B0%C6%A1i_Sumatra" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a26">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Tê giác Sumatra</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Dicerorhinus sumatlingsis</p>
+                                            <p class="glide_text">Tê giác Sumatra là loài tê giác nhỏ nhất trong số các loài tê giác còn sống và là loài tê giác duy nhất ở châu Á có hai sừng.<br>
+                                                Vì nạn săn trộm do nhu cầu sừng tê giác tăng lên, môi trường sống bị mất, số cá thể tê giác Sumatra đã giảm xuống chỉ còn 80 con.</p>
+                                            <a href="https://vi.wikipedia.org/wiki/T%C3%AA_gi%C3%A1c_Sumatra" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a27">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Hổ Sunda</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Panthera tigris sondaica</p>
+                                            <p class="glide_text">Những con hổ Sunda được phân biệt bởi các sọc đen dày trên bộ lông màu cam của chúng.<br>
+                                                Hiện chỉ còn 400 cá thể, tất cả đều sống trên đảo Sumatra. Các nhà bảo tồn lo lắng rằng nạn phá rừng và săn trộm (chiếm 80% số ca tử vong của hổ) có thể dẫn đến sự tuyệt chủng của chúng.</p>
+                                            <a href="https://vi.wikipedia.org/wiki/H%E1%BB%95_Java" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a28">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Cá heo Vaquita</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Phocoena sinus</p>
+                                            <p class="glide_text">Vaquita là một loài cá heo đặc hữu của Vịnh California. Với số lượng chỉ còn 10 cá thể, Vaquita là động vật có vú dưới biển hiếm nhất thế giới.<br>
+                                                Chỉ được phát hiện vào năm 1958, chúng hiện đang trên bờ vực tuyệt chủng do đánh bắt cá bất hợp pháp - cứ năm con cá heo Vaquita thì có một con chết trong lưới đánh cá.</p>
+                                            <a href="https://vi.wikipedia.org/wiki/C%C3%A1_heo_California" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a29">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Khỉ đột miền tây</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Gorilla gorilla gorilla</p>
+                                            <p class="glide_text">Số lượng chính xác của khỉ đột vùng đất thấp phía Tây chưa được biết do môi trường sống xa xôi của chúng trong rừng nhiệt đới châu Phi.<br>
+                                                Chúng được tìm thấy ở Cameroon, Cộng hòa Trung Phi, Cộng hòa Dân chủ Congo, Equatorial Guinea, Gabon và Cộng hòa Congo.</p>
+                                            <a href="https://vi.wikipedia.org/wiki/Kh%E1%BB%89_%C4%91%E1%BB%99t_%C4%91%E1%BA%A5t_th%E1%BA%A5p_ph%C3%ADa_T%C3%A2y" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                    <li class="glide__slide a30">
+                                        <div class="glide_header">
+                                            <h2 class="title glide_title">Cá heo không vây nước ngọt</h2>
+                                            <div class="glide_items">
+                                                <span class="glide_icons"><i class="far fa-heart love_icon" id="animateIcon"></i></span>
+                                                <span class="glide_icons"><i class="fas fa-share-alt"></i></span>
+                                                <span class="glide_icons"><i class="far fa-comment-dots" id="animateIcon"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="glide_content">
+                                            <p class="science_name">Neophocaena asiaeorientalis ssp. Asiaeorientalis</p>
+                                            <p class="glide_text">Với số lượng ít hơn 2.000 cá thể, loài cá heo không vây sống ở nước ngọt này được biết đến với trí thông minh có thể so sánh với một con khỉ đột và "nụ cười" tinh nghịch của nó.<br>
+                                                Chúng được tìm thấy ở sông Dương Tử, Trung Quốc, nhưng đánh bắt quá mức và ô nhiễm có thể dẫn đến sự tuyệt chủng của chúng.</p>
+                                            <a href="https://en.wikipedia.org/wiki/Yangtze_finless_porpoise" class="btn glide_btn" target="_blank">Thông tin chi tiết &#187;</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="glide__arrows" data-glide-el="controls">
+                                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-chevron-left"></i></button>
+                                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                            <div class="glide__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet" data-glide-dir="=0"></button>
+                                <button class="glide__bullet" data-glide-dir="=1"></button>
+                                <button class="glide__bullet" data-glide-dir="=2"></button>
+                                <button class="glide__bullet" data-glide-dir="=3"></button>
+                                <button class="glide__bullet" data-glide-dir="=4"></button>
+                                <button class="glide__bullet" data-glide-dir="=5"></button>
+                                <button class="glide__bullet" data-glide-dir="=6"></button>
+                                <button class="glide__bullet" data-glide-dir="=7"></button>
+                                <button class="glide__bullet" data-glide-dir="=8"></button>
+                                <button class="glide__bullet" data-glide-dir="=9"></button>
+                                <button class="glide__bullet" data-glide-dir="=10"></button>
+                                <button class="glide__bullet" data-glide-dir="=11"></button>
+                                <button class="glide__bullet" data-glide-dir="=12"></button>
+                                <button class="glide__bullet" data-glide-dir="=13"></button>
+                                <button class="glide__bullet" data-glide-dir="=14"></button>
+                              </div>
+                          </div>
+                    </div>
+                </div>
+            </section>
+                
+            <section class="service" id="service">
+                <div class="container_glass">
+                    <h2 class="title service_title">Chính <span>phủ</span></h2>
+                    <div class="service_cards">
+                        <!-- <div class="service_card" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
+                            <div class="service_card_main">
+                                <img src="img/service3.png" alt="" class="service_card_img">
+                                <p class="learn_more">Learn more <i class="fas fa-chevron-right"></i></p>
+                            </div>
+                            <div class="service_card_content">
+                                <h3 class="content_titles service_card_title">Fast <span>code</span></h3>
+                                <p class="service_card_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium quas rem aperiam adipisci, optio earum officiis veritatis ex molestiae provident tempora, quos, explicabo molestias. Voluptatem.</p>
+                                <p class="learn_back"><i class="fas fa-chevron-left"></i> Back</p>
+                            </div>
+                        </div> -->
+                        <div class="service_cards_content">
+                            <div class="service_card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500">
+                                <div class="service_card_main">
+                                    <img src="img/doimat.png" alt="" class="service_card_img">
+                                    <p class="learn_more">Learn more <i class="fas fa-chevron-right"></i></p>
+                                </div>
+                                <div class="service_card_content">
+                                    <h3 class="content_titles service_card_title">Đối <span>mặt</span></h3>
+                                    <p class="service_card_text">
+                                        Để đối phó với nguy cơ mất cân bằng sinh thái trên trái đất và ngăn chặn nguy cơ TCHL của các loài, 
+                                        đòi hỏi sự nỗ lực rất lớn của mỗi con người, mỗi quốc gia. Nhiều quốc gia trên thế giới đã ban hành 
+                                        các đạo luật về bảo vệ các loài và môi trường sinh thái. Hiện nay, Công ước quốc tế về buôn bán các 
+                                        loài đang có nguy cơ tuyệt chủng (CITES) đã được ban hành nhằm kiểm soát và quan trắc việc buôn bán 
+                                        các loài động vật có nguy cơ tuyệt chủng.
+                                    </p>
+                                    <p class="learn_back"><i class="fas fa-chevron-left"></i> Back</p>
+                                </div>
+                            </div>
+                            <div class="service_card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="500">
+                                <div class="service_card_main">
+                                    <img src="img/trachnhiem.png" alt="" class="service_card_img">
+                                    <p class="learn_more">Learn more <i class="fas fa-chevron-right"></i></p>
+                                </div>
+                                <div class="service_card_content">
+                                    <h3 class="content_titles service_card_title">Trách <span>nhiệm</span></h3>
+                                    <p class="service_card_text" style="font-size: medium">
+                                        &#8226;Nhiều Chính phủ đã cam kết mạnh mẽ để giải quyết cuộc khủng hoảng này theo các mục tiêu hành động được thỏa thuận trong các Mục tiêu phát triển bền vững.<br>
+                                        &#8226;Giữ vai trò liên kết giữa các quốc gia, hỗ trợ các Chính phủ trong việc phát triển các chiến lược để chống tội phạm về động, thực vật hoang dã.<br>
+                                        &#8226;Hành động để hỗ trợ các khu bảo tồn, cộng đồng và khu bảo tồn quốc gia, xây dựng năng lực thực thi pháp luật cho các quốc gia.<br>
+                                        &#8226;Phối hợp với các cơ quan chủ quản cấp quốc gia liên quan đến việc đấu tranh chống nạn săn trộm và buôn bán động, thực vật hoang dã bất hợp pháp như hải quan, công an, kiểm lâm, và cơ quan quản lý, bảo vệ, bảo tồn động, thực vật hoang dã.                     
+                                    </p>
+                                    <p class="learn_back"><i class="fas fa-chevron-left"></i> Back</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>  
+
+            <section class="service" id="service">
+                <div class="container_glass">
+                    <h2 class="title service_title">Luật <span>pháp</span></h2>
+                    <div class="service_cards">
+                        <div class="service_card" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
+                            <div class="service_card_main">
+                                <img src="img/dadang.png" alt="" class="service_card_img">
+                                <p class="learn_more">Learn more <i class="fas fa-chevron-right"></i></p>
+                            </div>
+                            <div class="service_card_content">
+                                <h3 class="content_titles service_card_title">Luật <span>Đa dạng sinh học </span>(2008)</h3>
+                                <p class="service_card_text">Quy định về hoạt động bảo tồn và phát triển bền vững, xác định quyền và nghĩa vụ của các cơ quan, cá nhân, tổ chức, hộ gia đình và cộng đồng đối với việc bảo vệ và bảo tồn đa dạng sinh học.
+                                    
+                                </p>
+                                <p class="learn_back"><i class="fas fa-chevron-left"></i> Back</p>
+                            </div>
+                        </div>
+                        <div class="service_card" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
+                            <div class="service_card_main">
+                                <img src="img/lam.png" alt="" class="service_card_img">
+                                <p class="learn_more">Learn more <i class="fas fa-chevron-right"></i></p>
+                            </div>
+                            <div class="service_card_content">
+                                <h3 class="content_titles service_card_title">Luật <span>Lâm nghiệp </span>(2017)</h3>
+                                <p class="service_card_text">Chủ yếu quy định hoạt động quản lý, bảo vệ, phát triển và sử dụng rừng; quyền và trách nhiệm của chủ rừng. 
+                                    Nghiêm cấm mọi hành vi săn, bắt, nuôi, nhốt, giết, tàng trữ, vận chuyển, buôn bán động vật rừng, thu thập mẫu vật các loài thực vật rừng, 
+                                    động vật rừng trái phép. 
+                                </p>
+                                <p class="learn_back"><i class="fas fa-chevron-left"></i> Back</p>
+                            </div>
+                        </div>
+                        <div class="service_card" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
+                            <div class="service_card_main">
+                                <img src="img/160.png" alt="" class="service_card_img">
+                                <p class="learn_more">Learn more <i class="fas fa-chevron-right"></i></p>
+                            </div>
+                            <div class="service_card_content">
+                                <h3 class="content_titles service_card_title">Nghị định số <span>160/2013/NĐ-CP</span></h3>
+                                <p class="service_card_text">Quy định hệ thống các tiêu chí để đánh giá và xác định loài ĐVHD đưa vào Danh mục loài nguy cấp, quý, 
+                                    hiếm được ưu tiên bảo vệ. 
+                                </p>
+                                <p class="learn_back"><i class="fas fa-chevron-left"></i> Back</p>
+                            </div>
+                        </div>
+                        <div class="service_card" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
+                            <div class="service_card_main">
+                                <img src="img/06.png" alt="" class="service_card_img">
+                                <p class="learn_more">Learn more <i class="fas fa-chevron-right"></i></p>
+                            </div>
+                            <div class="service_card_content">
+                                <h3 class="content_titles service_card_title">Nghị định số <span>06/2019/NĐ-CP</span></h3>
+                                <p class="service_card_text">Chia động vật rừng nguy cấp, quý, hiếm thành 2 nhóm dựa trên mức độ nguy cấp và sự cần thiết bảo vệ của pháp luật đối với các loài đó, bao gồm: (1) Nhóm IB: Nghiêm cấm khai thác, sử dụng vì mục đích thương mại; và (2) Nhóm IIB: Hạn chế khai thác, sử dụng vì mục đích thương mại.
+                                </p>
+                                <p class="learn_back"><i class="fas fa-chevron-left"></i> Back</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <section class="service" id="service">
+                <div class="container_glass">
+                    <h2 class="title service_title">Tuyên <span>truyền</span></h2>
+                    <div class="service_cards">
+                        <!-- <div class="service_card" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
+                            <div class="service_card_main">
+                                <img src="img/service3.png" alt="" class="service_card_img">
+                                <p class="learn_more">Learn more <i class="fas fa-chevron-right"></i></p>
+                            </div>
+                            <div class="service_card_content">
+                                <h3 class="content_titles service_card_title">Fast <span>code</span></h3>
+                                <p class="service_card_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium quas rem aperiam adipisci, optio earum officiis veritatis ex molestiae provident tempora, quos, explicabo molestias. Voluptatem.</p>
+                                <p class="learn_back"><i class="fas fa-chevron-left"></i> Back</p>
+                            </div>
+                        </div> -->
+                        <div class="service_cards_content">
+                            <div class="service_card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500">
+                                <div class="service_card_main">
+                                    <img src="img/canhan.png" alt="" class="service_card_img">
+                                    <p class="learn_more">Learn more <i class="fas fa-chevron-right"></i></p>
+                                </div>
+                                <div class="service_card_content">
+                                    <h3 class="content_titles service_card_title">Cá <span>nhân</span></h3>
+                                    <p class="service_card_text">
+                                        &#8226;Nâng cao nhận thức của bản thân.<br>
+                                        &#8226;Nâng cao nhận thức của người xung quanh về việc bảo vệ động vật hoang dã.<br>
+                                        &#8226;Không sử dụng/buôn bán những sản phẩm có nguồn gốc từ động vật hoang dã.
+                                    </p>
+                                    <p class="learn_back"><i class="fas fa-chevron-left"></i> Back</p>
+                                </div>
+                            </div>
+                            <div class="service_card" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="500">
+                                <div class="service_card_main">
+                                    <img src="img/tapthe.png" alt="" class="service_card_img">
+                                    <p class="learn_more">Learn more <i class="fas fa-chevron-right"></i></p>
+                                </div>
+                                <div class="service_card_content">
+                                    <h3 class="content_titles service_card_title">Tập <span>thể</span></h3>
+                                    <p class="service_card_text">
+                                        &#8226;Tổ chức các chiến dịch cộng đồng nhằm nâng cao nhận thức, tác động trực tiếp đến công cuộc bảo tồn động vật hoang dã.<br>
+                                        &#8226;Giới thiệu các mô hình, xu hướng sản xuất xanh, lối sống xanh, tiêu dùng xanhnhằm lan tỏa ý thức bảo vệ động vật hoang dã đến tới người dân.
+                                    </p>
+                                    <p class="learn_back"><i class="fas fa-chevron-left"></i> Back</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <div class="container_glass">
+                    <h2 class="title contact_title">Thông tin <span>liên hệ</span></h2>
+                    <div class="contact_content">
+                        <div class="contact_me">
+                            <h3 class="content_titles contact_content_title" data-aos="fade-down" data-aos-duration="1000">He<span>lu</span></h3>
+                            <p class="contact_content_text" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">Liên hệ với tụi mình nếu mọi người có thắc mắc gì nhé!</p>
+                            <div class="contact_content_box" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+                                <span class="contact_box_icon"><i class="fas fa-envelope"></i></span>
+                                <div class="contact_box_info">
+                                    <h5 class="contact_box_title">Email</h5>
+                                    <a href="https://group7cnmt@gmail.com" class="contact_box_link" target="_blank">group7cnmt@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact_content_box" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
+                                <span class="contact_box_icon"><i class="fas fa-map-marker-alt"></i></span>
+                                <div class="contact_box_info">
+                                    <h5 class="contact_box_title">Address</h5>
+                                    <a href="https://goo.gl/maps/rHVviHG97LtjH2Dz7" class="contact_box_link" target="_blank">TP.HCM, Việt Nam</a>
+                                </div>
+                            </div>
+                            <!-- <div class="contact_content_box" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
+                                <span class="contact_box_icon"><i class="fab fa-telegram"></i></span>
+                                <div class="contact_box_info">
+                                    <h5 class="contact_box_title">Telephone</h5>
+                                    <a href="https://t.me/MrUzcoin" class="contact_box_link" target="_blank">**********</a>
+                                </div>
+                            </div> -->
+                            <!-- <div class="social_media">
+                                <a href="https://t.me/MrUzcoin" class="messangers">
+                                    <i class="fab fa-telegram"></i>
+                                    <span class="tooltiptext">MrUzcoin</span>
+                                </a>
+                                <a href="https://twitter.com/MrUzcoin" class="messangers">
+                                    <i class="fab fa-twitter"></i>
+                                    <span class="tooltiptext">MrUzcoin</span>
+                                </a>
+                                <a href="https://www.facebook.com/suyunbek.saydazimov.18/" class="messangers">
+                                    <i class="fab fa-facebook"></i>
+                                    <span class="tooltiptext">Suyunbek</span>
+                                </a>
+                            </div> -->
+                        </div>
+                        <div class="send_comment">
+                            <h3 class="content_titles send_comment_title" data-aos="fade-up" data-aos-duration="1000">Bình <span>luận</span></h3>
+                            <form action="" class="comments_form">
+                                <!-- <label for="job" class="comments_label">Your job</label>
+                                <div class="select" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                                    <button type="button" name="job" id="job" class="select_input">Not selected</button>
+                                    <div class="options">
+                                        <p class="options_item active">Web Developer</p>
+                                        <p class="options_item">Web Designer</p>
+                                    </div>
+                                </div> -->
+                                <label for="country" class="comments_label">Nơi sống</label>
+                                <div class="select" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                                    <button type="button" name="country" id="country" class="select_input">Chưa có thông tin</button>
+                                    <div class="options">
+                                        <p class="options_item active">Việt Nam</p>
+                                        <p class="options_item">Khác</p>
+                                    </div>
+                                </div>
+                                <label for="comment" class="comments_label">Viết bình luận</label>
+                                <div class="comment_textarea" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                                    <textarea name="comment" class="comment_area" maxlength="300" placeholder="Bạn có thắc mắc gì dọ?" required></textarea>
+                                </div>
+                                <button type="submit" class="btn comment_btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="comments" id="comments">
+                <div class="container_glass">
+                    <h2 class="title comments_title">Một số <span>sự thật</span> thú vị</h2>
+                    <div class="comments_content">
+                        <div class="comment" data-aos="flip-left" data-aos-duration="1000">
+                            <!-- <div class="comment_img_blog">
+                                <a href="#"><img src="../img/about_img.jpeg" alt="" class="comment_img" title="View profile"></a>
+                            </div> -->
+                            <div class="comment_body">
+                                <div class="comment_item">
+                                    <p class="comment_text">Trong bản đánh giá năm 2006 của IUCN, 65% loài linh trưởng của Việt Nam đang ở trong tình trạng Nguy cấp hoặc Cực kỳ nguy cấp, vì vậy Việt Nam đang là một trong những nước được ưu tiên cao nhất trên toàn cầu về bảo tồn linh trưởng.</p>
+                                    <form action="" method="post" class="comment_edit_form" style="display: none;">
+                                        <textarea name="comment" class="comment_area" maxlength="300" placeholder="Message" required></textarea>
+                                        <div class="edit_comment_buttons">
+                                            <button class="btn edit_comment_button edit_comment_btn" type="submit">Save</button>
+                                            <button class="btn edit_comment_button cancel_comment_btn" type="button">Cancel</button>
+                                        </div>
+                                    </form>
+                                    <div class="comment_functions">
+                                        <a href="#" class="comment_function" id="edit" title="Edit comment"><i class="fas fa-pen"></i></a href="#">
+                                        <a href="#" class="comment_function" id="delete" title="Delete comment"><i class="fas fa-trash"></i></a href="#">
+                                    </div>
+                                </div>
+                                <div class="comment_footer">
+                                    <a href="#" class="comment_name" title="View profile">Wikipedia contributors</a>
+                                    <p class="comment_date" title="Comment created Date">07-02-2022</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="100">
+                            <div class="comment_img_blog">
+                                <!-- <a href="#"><img src="../img/about_img.jpeg" alt="" class="comment_img" title="View profile"></a> -->
+                            </div>
+                            <div class="comment_body">
+                                <div class="comment_item">
+                                    <p class="comment_text">Động vật sắp tuyệt chủng nhanh hơn từ 1000 đến 10.000 lần so với tốc độ tự nhiên</p>
+                                    <form action="" method="post" class="comment_edit_form" style="display: none;">
+                                        <textarea name="comment" class="comment_area" maxlength="300" placeholder="Message" required></textarea>
+                                        <div class="edit_comment_buttons">
+                                            <button class="btn edit_comment_button edit_comment_btn" type="submit">Save</button>
+                                            <button class="btn edit_comment_button cancel_comment_btn" type="button">Cancel</button>
+                                        </div>
+                                    </form>
+                                    <div class="comment_functions">
+                                        <a href="#" class="comment_function" id="edit" title="Edit comment"><i class="fas fa-pen"></i></a href="#">
+                                        <a href="#" class="comment_function" id="delete" title="Delete comment"><i class="fas fa-trash"></i></a href="#">
+                                    </div>
+                                </div>
+                                <div class="comment_footer">
+                                    <a href="#" class="comment_name" title="View profile">Tufts Now</a>
+                                    <p class="comment_date" title="Comment created Date">09-01-2022</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+                            <div class="comment_img_blog">
+                                <!-- <a href="#"><img src="../img/about_img.jpeg" alt="" class="comment_img" title="View profile"></a> -->
+                            </div>
+                            <div class="comment_body">
+                                <div class="comment_item">
+                                    <p class="comment_text">Tăng trưởng dân số gần như xóa sổ cá ngừ vây xanh Đại Tây Dương</p>
+                                    <form action="" method="post" class="comment_edit_form" style="display: none;">
+                                        <textarea name="comment" class="comment_area" maxlength="300" placeholder="Message" required></textarea>
+                                        <div class="edit_comment_buttons">
+                                            <button class="btn edit_comment_button edit_comment_btn" type="submit">Save</button>
+                                            <button class="btn edit_comment_button cancel_comment_btn" type="button">Cancel</button>
+                                        </div>
+                                    </form>
+                                    <div class="comment_functions">
+                                        <a href="#" class="comment_function" id="edit" title="Edit comment"><i class="fas fa-pen"></i></a href="#">
+                                        <a href="#" class="comment_function" id="delete" title="Delete comment"><i class="fas fa-trash"></i></a href="#">
+                                    </div>
+                                </div>
+                                <div class="comment_footer">
+                                    <a href="#" class="comment_name" title="View profile">Center for Biological Diversity</a>
+                                    <p class="comment_date" title="Comment created Date">09-01-2022</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="300">
+                            <div class="comment_img_blog">
+                                <!-- <a href="#"><img src="../img/about_img.jpeg" alt="" class="comment_img" title="View profile"></a> -->
+                            </div>
+                            <div class="comment_body">
+                                <div class="comment_item">
+                                    <p class="comment_text">Cứ bốn loài động vật có vú thì có một loài nguy cấp</p>
+                                    <form action="" method="post" class="comment_edit_form" style="display: none;">
+                                        <textarea name="comment" class="comment_area" maxlength="300" placeholder="Message" required></textarea>
+                                        <div class="edit_comment_buttons">
+                                            <button class="btn edit_comment_button edit_comment_btn" type="submit">Save</button>
+                                            <button class="btn edit_comment_button cancel_comment_btn" type="button">Cancel</button>
+                                        </div>
+                                    </form>
+                                    <div class="comment_functions">
+                                        <a href="#" class="comment_function" id="edit" title="Edit comment"><i class="fas fa-pen"></i></a href="#">
+                                        <a href="#" class="comment_function" id="delete" title="Delete comment"><i class="fas fa-trash"></i></a href="#">
+                                    </div>
+                                </div>
+                                <div class="comment_footer">
+                                    <a href="#" class="comment_name" title="View profile">Endangered Earth</a>
+                                    <p class="comment_date" title="Comment created Date">09-01-2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn load_more" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">Load more</a>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_nav">
+                    <ul class="foot_list"><span>Pages</span>
+                        <li><a href="#home" class="foot_link">Trang chủ</a></li>
+                            <li><a href="#about" class="foot_link">Hiện trạng</a></li>
+                            <li><a href="#skills" class="foot_link">Tình trạng</a></li>
+                            <li><a href="#projects" class="foot_link">Động vật nguy cấp</a></li>
+                            <li><a href="#service" class="foot_link">Giải pháp</a></li>
+                            <li><a href="#contact" class="foot_link">Liên hệ</a></li>
+                            <li><a href="#comments" class="foot_link">Facts</a></li>
+                    </ul>
+                    <!-- <ul class="foot_list"><span>Projects</span>
+                        <li><a href="#" class="foot_link">Team-Work</a></li>
+                        <li><a href="#" class="foot_link">Vue-cinema</a></li>
+                        <li><a href="#" class="foot_link">Music site</a></li>
+                        <li><a href="#" class="foot_link">Videoplayer</a></li>
+                        <li><a href="#" class="foot_link">Calculator</a></li>
+                        <li><a href="#" class="foot_link">Php Website</a></li>
+                    </ul> -->
+                    <ul class="foot_list"><span>Contact me</span>
+                        <li><a href="https://group7cnmt@gmail.com" class="foot_link">group7cnmt@gmail.com</a></li>
+                        <li><a href="https://goo.gl/maps/iK22g2Yw86vsynkZ6" class="foot_link">TP.HCM, Việt Nam</a></li>
+                        <!-- <li><a href="https://t.me/MrUzcoin" class="foot_link">+998906225022</a></li> -->
+                    </ul>
+                    <ul class="foot_list"><span>Social media</span>
+                        <li><a href="/" class="nav_logo"><img src="img/ava.jpg" alt="" class="logo"><p class="logo_text">Nhóm 7</p></a></li>
+                        <p class="foot_text">Hy vọng website của tụi mình sẽ giúp ích cho cá bạn.</p>
+                        <!-- <div class="social_media">
+                            <a href="https://t.me/MrUzcoin" class="messangers">
+                                <i class="fab fa-telegram"></i>
+                                <span class="tooltiptext">MrUzcoin</span>
+                            </a>
+                            <a href="https://twitter.com/MrUzcoin" class="messangers">
+                                <i class="fab fa-twitter"></i>
+                                <span class="tooltiptext">MrUzcoin</span>
+                            </a>
+                            <a href="https://www.facebook.com/suyunbek.saydazimov.18/" class="messangers">
+                                <i class="fab fa-facebook"></i>
+                                <span class="tooltiptext">Suyunbek</span>
+                            </a>
+                        </div> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_foot">
+                <div class="container">
+                    <div>Copyright <i class="far fa-copyright"></i> 2010-2021 All rights reserved | Created by <a href="https://github.com/Uzcoin404" class="creator_name">UzCoin</a></div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="js/glide.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/script.js"></script>
+    <!-- <script src="js/script1.js"></script> -->
+   
+
+</body>
+</html>
